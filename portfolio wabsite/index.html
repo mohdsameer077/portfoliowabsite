@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sameer Khan — Frontend Developer & Website Designer</title>
+  <meta name="description" content="Sameer Khan – Frontend Developer & Website Designer. I build modern business websites that convert visitors into customers." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Clash Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       CANVAS — Particle Background
+  ============================================================ -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-inner container">
+      <a href="#hero" class="nav-logo">SK<span class="dot">.</span></a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="https://wa.me/917466913603" target="_blank" class="btn btn-primary btn-sm">
+            <i class="ph ph-whatsapp-logo"></i> Hire Me
+          </a>
+        </li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="hero">
+    <div class="hero-inner container">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Available for Freelance Projects
+      </div>
+
+      <h1 class="hero-heading reveal-up" style="--delay:.1s">
+        Hi, I'm <span class="gradient-text">Sameer</span>
+      </h1>
+
+      <p class="hero-sub reveal-up" style="--delay:.2s">
+        Frontend Developer &amp; Website Designer
+      </p>
+
+      <p class="hero-desc reveal-up" style="--delay:.3s">
+        I design and develop modern, responsive websites for<br class="desktop-br" />
+        businesses and startups that <em>actually convert</em>.
+      </p>
+
+      <div class="hero-cta reveal-up" style="--delay:.4s">
+        <a href="#projects" class="btn btn-primary">
+          <i class="ph ph-eye"></i> View My Work
+        </a>
+        <a href="https://wa.me/917466913603" target="_blank" class="btn btn-outline">
+          <i class="ph ph-paper-plane-tilt"></i> Hire Me
+        </a>
+      </div>
+
+      <div class="hero-stats reveal-up" style="--delay:.5s">
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Years Learning</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Image -->
+        <div class="about-image-wrap reveal-left">
+          <div class="about-img-frame">
+            <img
+              src="images/profile.jpg"
+              alt="Sameer Khan – Frontend Developer"
+              class="about-img"
+            />
+            <div class="img-badge">
+              <i class="ph ph-code"></i>
+              <span>Frontend Dev</span>
+            </div>
+          </div>
+          <!-- Floating cards -->
+          <div class="float-card float-card-1">
+            <i class="ph ph-star-four"></i> UI / UX Design
+          </div>
+          <div class="float-card float-card-2">
+            <i class="ph ph-rocket-launch"></i> Fast Delivery
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text reveal-right">
+          <p class="section-label">About Me</p>
+          <h2 class="section-heading">
+            Turning Ideas Into<br /><span class="gradient-text">Digital Reality</span>
+          </h2>
+          <p class="about-para">
+            I'm <strong>Sameer Khan</strong>, a passionate Frontend Developer and BCA student building real-world, business-focused websites. I combine clean code with thoughtful design to deliver websites that don't just look great — they <em>perform</em>.
+          </p>
+          <p class="about-para">
+            My focus is on creating premium digital experiences for businesses and startups — from sleek landing pages to full business websites, each crafted with pixel-perfect attention and a sharp eye for conversion-driven UI.
+          </p>
+
+          <ul class="about-list">
+            <li><i class="ph ph-check-circle"></i> BCA Student — Combining academics with real projects</li>
+            <li><i class="ph ph-check-circle"></i> Passionate about minimal, modern UI design</li>
+            <li><i class="ph ph-check-circle"></i> Building websites that drive business results</li>
+            <li><i class="ph ph-check-circle"></i> Clean code, clean design — always</li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary">
+            Let's Work Together <i class="ph ph-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">My Work</p>
+        <h2 class="section-heading">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">A selection of real-world projects I've designed and developed.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal-up" style="--delay:.05s">
+          <div class="project-img-wrap">
+            <img
+              src="images/restaurant-site.png"
+              alt="Restaurant Website"
+              class="project-img"
+            />
+            <div class="project-overlay">
+              <span class="project-category">Food &amp; Dining</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Restaurant Website</h3>
+            <p class="project-desc">A premium restaurant site with animated menus, reservation system, and mouth-watering food gallery to drive table bookings.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://motimahal.netlify.app/" class="btn btn-primary btn-sm"><i class="ph ph-arrow-square-out"></i> Live Demo</a>
+              <a href="https://motimahal.netlify.app/" class="btn btn-ghost btn-sm"><i class="ph ph-github-logo"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal-up" style="--delay:.1s">
+          <div class="project-img-wrap">
+            <img
+              src="images/Footwear-site.png"
+              alt="Footwear Store Website"
+              class="project-img"
+            />
+            <div class="project-overlay">
+              <span class="project-category">E-Commerce</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Footwear Store Website</h3>
+            <p class="project-desc">Luxury-feel store with elegant product showcases, gold-accent UI, and a seamless shopping experience.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JS</span>
+            </div>
+            <div class="project-actions">
+              <a href="http://warshifootwear.netlify.app/" class="btn btn-primary btn-sm"><i class="ph ph-arrow-square-out"></i> Live Demo</a>
+              <a href="http://warshifootwear.netlify.app/" class="btn btn-ghost btn-sm"><i class="ph ph-github-logo"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal-up" style="--delay:.15s">
+          <div class="project-img-wrap">
+            <img
+              src="images/portfolio-site.png"
+              alt="Freelancer Portfolio Website"
+              class="project-img"
+            />
+            <div class="project-overlay">
+              <span class="project-category">Freelancer Portfolio</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Freelancer Portfolio Website</h3>
+            <p class="project-desc">Professional multi-page site for a local service business — optimised for local SEO, lead generation, and mobile users.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">SEO</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://graphicoff.netlify.app/" class="btn btn-primary btn-sm"><i class="ph ph-arrow-square-out"></i> Live Demo</a>
+              <a href="https://graphicoff.netlify.app/" class="btn btn-ghost btn-sm"><i class="ph ph-github-logo"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal-up" style="--delay:.2s">
+          <div class="project-img-wrap">
+            <img
+              src="images/salon-website.png"
+              alt="Premium Salon Website"
+              class="project-img"
+            />
+            <div class="project-overlay">
+              <span class="project-category">Beauty &amp; Wellness</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Premium Salon Website</h3>
+            <p class="project-desc">Experience luxury grooming and beauty services with expert stylists, modern techniques, and a welcoming, hygienic environment. Where style meets confidence.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JS</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://blushbeautymbd.netlify.app/" class="btn btn-primary btn-sm"><i class="ph ph-arrow-square-out"></i> Live Demo</a>
+              <a href="https://blushbeautymbd.netlify.app/" class="btn btn-ghost btn-sm"><i class="ph ph-github-logo"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">What I Do</p>
+        <h2 class="section-heading">Services I <span class="gradient-text">Offer</span></h2>
+        <p class="section-desc">Everything your business needs to establish a powerful online presence.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal-up" style="--delay:.05s">
+          <div class="service-icon-wrap">
+            <i class="ph ph-monitor"></i>
+          </div>
+          <h3 class="service-title">Business Website Design</h3>
+          <p class="service-desc">Custom, mobile-first websites built to reflect your brand identity and turn visitors into paying customers.</p>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:.1s">
+          <div class="service-icon-wrap">
+            <i class="ph ph-rocket-launch"></i>
+          </div>
+          <h3 class="service-title">Landing Page Design</h3>
+          <p class="service-desc">High-converting landing pages with sharp copy, compelling CTAs and pixel-perfect design optimised for results.</p>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:.15s">
+          <div class="service-icon-wrap">
+            <i class="ph ph-paint-brush-broad"></i>
+          </div>
+          <h3 class="service-title">Website Redesign</h3>
+          <p class="service-desc">Breathe new life into your old website. Modern redesigns that improve user experience, speed, and conversions.</p>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:.2s">
+          <div class="service-icon-wrap">
+            <i class="ph ph-whatsapp-logo"></i>
+          </div>
+          <h3 class="service-title">WhatsApp Integration</h3>
+          <p class="service-desc">Seamless WhatsApp chat buttons and click-to-chat flows so potential customers can reach you instantly.</p>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:.25s">
+          <div class="service-icon-wrap">
+            <i class="ph ph-cloud-arrow-up"></i>
+          </div>
+          <h3 class="service-title">Hosting &amp; Deployment</h3>
+          <p class="service-desc">Fast, reliable deployment on Netlify, Vercel, or cPanel. Your site live and optimized in record time.</p>
+        </div>
+
+        <div class="service-card service-card--cta reveal-up" style="--delay:.3s">
+          <h3 class="service-cta-heading">Ready to build<br />something great?</h3>
+          <p class="service-cta-sub">Let's discuss your project today.</p>
+          <a href="https://wa.me/917466913603" target="_blank" class="btn btn-primary">
+            <i class="ph ph-whatsapp-logo"></i> Chat on WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">Tech Stack</p>
+        <h2 class="section-heading">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-desc">Tools and technologies I use to bring your vision to life.</p>
+      </div>
+
+      <div class="skills-layout">
+
+        <div class="skills-bars reveal-left">
+          <div class="skill-item" data-percent="92">
+            <div class="skill-info">
+              <span class="skill-name">HTML5</span>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="--target:92%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-percent="88">
+            <div class="skill-info">
+              <span class="skill-name">CSS3 / Animations</span>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="--target:88%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-percent="75">
+            <div class="skill-info">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="--target:75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-percent="90">
+            <div class="skill-info">
+              <span class="skill-name">Responsive Design</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="--target:90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-percent="82">
+            <div class="skill-info">
+              <span class="skill-name">UI / UX Design</span>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="--target:82%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-percent="78">
+            <div class="skill-info">
+              <span class="skill-name">GitHub</span>
+              <span class="skill-percent">78%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="--target:78%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-percent="85">
+            <div class="skill-info">
+              <span class="skill-name">Netlify Deployment</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="--target:85%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Icons -->
+        <div class="tech-icons reveal-right">
+          <div class="tech-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+            <span>HTML5</span>
+          </div>
+          <div class="tech-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+            <span>CSS3</span>
+          </div>
+          <div class="tech-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1)" />
+            <span>GitHub</span>
+          </div>
+          <div class="tech-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+            <span>Figma</span>
+          </div>
+          <div class="tech-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+            <span>VS Code</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS SECTION
+  ============================================================ -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-label">Kind Words</p>
+        <h2 class="section-heading">Client <span class="gradient-text">Testimonials</span></h2>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal-up" style="--delay:.05s">
+          <div class="testimonial-stars">
+            <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+          </div>
+          <p class="testimonial-text">
+            "Sameer delivered exactly what we needed — a clean, professional restaurant website that has genuinely helped us get more reservations online. Fast turnaround, great communication."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1600486913747-55e5470d2eed?w=100&q=80" alt="Arjun Mehta" class="author-img" />
+            <div>
+              <span class="author-name">Arjun Mehta</span>
+              <span class="author-role">Restaurant Owner, Mumbai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal-up" style="--delay:.1s">
+          <div class="testimonial-stars">
+            <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+          </div>
+          <p class="testimonial-text">
+            "Our jewellery store website looks absolutely stunning. Customers frequently compliment us on how beautiful and easy to navigate it is. Sameer understood our vision perfectly."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Priya Sharma" class="author-img" />
+            <div>
+              <span class="author-name">Priya Sharma</span>
+              <span class="author-role">Founder, Sheen Jewels</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal-up" style="--delay:.15s">
+          <div class="testimonial-stars">
+            <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i><i class="ph ph-star-fill"></i>
+            <i class="ph ph-star-fill"></i>
+          </div>
+          <p class="testimonial-text">
+            "Professional, responsive, and genuinely passionate about web design. Sameer rebuilt our outdated site into something we're actually proud to show clients. Highly recommended!"
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Rahul Gupta" class="author-img" />
+            <div>
+              <span class="author-name">Rahul Gupta</span>
+              <span class="author-role">Director, Gupta Enterprises</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left Info -->
+        <div class="contact-info reveal-left">
+          <p class="section-label">Get In Touch</p>
+          <h2 class="section-heading">Let's Build<br /><span class="gradient-text">Something Great</span></h2>
+          <p class="contact-desc">
+            Have a project in mind? I'd love to hear about it. Send me a message or reach out on WhatsApp and I'll get back to you within 24 hours.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:sameerkhan@example.com" class="contact-link">
+              <div class="contact-link-icon"><i class="ph ph-envelope-simple"></i></div>
+              <div>
+                <span class="contact-link-label">Email Me</span>
+                <span class="contact-link-val">sameerkhan@example.com</span>
+              </div>
+            </a>
+            <a href="https://wa.me/917466913603" target="_blank" class="contact-link">
+              <div class="contact-link-icon whatsapp-icon"><i class="ph ph-whatsapp-logo"></i></div>
+              <div>
+                <span class="contact-link-label">WhatsApp</span>
+                <span class="contact-link-val">+91 74669 13603</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- WhatsApp CTA -->
+          <a href="https://wa.me/917466913603" target="_blank" class="btn btn-whatsapp">
+            <i class="ph ph-whatsapp-logo"></i>
+            Message on WhatsApp
+          </a>
+        </div>
+
+        <!-- Right Form -->
+        <div class="contact-form-wrap reveal-right">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" autocomplete="name" />
+              <span class="form-error" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+              <span class="form-error" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+              <span class="form-error" id="message-error"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              <i class="ph ph-paper-plane-tilt"></i>
+              <span>Send Message</span>
+            </button>
+
+            <!-- Success message -->
+            <div class="form-success" id="form-success">
+              <i class="ph ph-check-circle"></i>
+              Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer">
+    <div class="footer-inner container">
+
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">SK<span class="dot">.</span></a>
+          <p class="footer-tagline">I Build Modern Business Websites<br />That Convert Visitors Into Customers.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <span class="footer-col-title">Navigation</span>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-links-col">
+          <span class="footer-col-title">Contact</span>
+          <a href="mailto:sameerkhan@example.com">sameerkhan@example.com</a>
+          <a href="https://wa.me/917466913603" target="_blank">+91 74669 13603</a>
+        </div>
+
+        <div class="footer-social-col">
+          <span class="footer-col-title">Follow Me</span>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="https://wa.me/917466913603" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Sameer Khan. All rights reserved.</p>
+        <p>Designed &amp; Built with <i class="ph ph-heart-fill" style="color:#2563eb"></i> by Sameer Khan</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BACK TO TOP BUTTON
+  ============================================================ -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="ph ph-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
